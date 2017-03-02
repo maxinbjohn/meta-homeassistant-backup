@@ -1,0 +1,28 @@
+From 3a1bdc63e837d7ed34fd1eb7cae40c744ad89f00 Mon Sep 17 00:00:00 2001
+From: "Maxin B. John" <maxin.john@intel.com>
+Date: Thu, 2 Mar 2017 18:55:55 +0200
+Subject: [PATCH] homeassistant: remove 'typing' dependency from setup.py
+
+"typing" module is provided by python3. So, we don't need the pypi
+one which creates conflict with the one provided by python3
+
+Signed-off-by: Maxin B. John <maxin.john@intel.com>
+---
+ setup.py | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 4317081..af188de 100755
+--- a/setup.py
++++ b/setup.py
+@@ -21,7 +21,6 @@ REQUIRES = [
+     'pip>=7.0.0',
+     'jinja2>=2.9.5',
+     'voluptuous==0.9.3',
+-    'typing>=3,<4',
+     'aiohttp==1.3.3',
+     'async_timeout==1.1.0',
+ ]
+-- 
+2.4.0
+
