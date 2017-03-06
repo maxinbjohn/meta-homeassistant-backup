@@ -31,4 +31,11 @@ RDEPENDS_${PN} += "\
     ${PYTHON_PN}-multidict \
     ${PYTHON_PN}-yarl \
     ${PYTHON_PN}-sqlalchemy \
+    ${PYTHON_PN}-fuzzywuzzy \
+    ${PYTHON_PN}-netdisco \
+    ${PYTHON_PN}-xmltodict \
+    ${PYTHON_PN}-distro \
+    ${PYTHON_PN}-astral \
+    ${PYTHON_PN}-mutagen \
+    ${PYTHON_PN}-gtts-token \
     "
